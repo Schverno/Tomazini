@@ -4,7 +4,7 @@
 import { EmailTemplate } from '../../components/email-template';
 import { Resend } from 'resend';
 
-const resend = new Resend('re_SRrokTiZ_P4bXXHCMHKHbJPXfZUzsde6y');
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 // @ts-ignore
 

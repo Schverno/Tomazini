@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["300", "500" , "600"], style: ['normal'] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["300", "500", "600"], style: ['normal'] });
 
 export const metadata: Metadata = {
   title: "Tomazini Group",
@@ -16,10 +18,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <Analytics />
+        <SpeedInsights/>
         <link rel="icon" href="/favicon.svg" type="image/svg" sizes="any" />
       </head>
-      <body className={poppins.className}>      
-          {children}  
+      <body className={poppins.className}>
+        {children}
       </body>
     </html>
   );

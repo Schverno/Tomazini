@@ -197,7 +197,7 @@ export default function Home() {
             </motion.div>
           </div>
           <div className="flex items-center justify-center w-full">
-            <motion.a href="/propiedades"
+            <motion.a href="/portfolio"
               initial={{ y: 20, opacity: 0, scale: 0.9 }}
               whileInView={{ y: 0, opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "20px" }}
