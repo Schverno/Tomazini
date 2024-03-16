@@ -1,5 +1,10 @@
 'use client'
 
+interface ListItemProps {
+  text: string; // Assuming 'text' is a string, adjust the type accordingly
+  index: number;
+}
+
 import { useState } from 'react';
 
 import { PageWrapper } from "../components/page-wrapper";
@@ -27,7 +32,7 @@ export default function Esg() {
     setIsAnimationComplete(true);
   };
 
-  const ListItem = ({ text, index }) => {
+  const ListItem: React.FC<ListItemProps> = ({ text, index }) => {
     return (
       <motion.li
         key={index}
