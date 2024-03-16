@@ -44,8 +44,8 @@ export default function Carousel({ children: slides, autoSlide = false, autoSlid
     whileInView={{ x:0, opacity: 1}}
     viewport={{ once: true, margin: "0px" }}
     transition={{ ease: [0.76, 0, 0.24, 1], duration: 2, delay:1.5,   damping: 15, stiffness: 100, type: "spring" }}
-    className="overflow-hidden relative">
-      <div className="flex max-w-full w-full transition-transform ease-in-out duration-500 object-cover" style={{ transform: `translateX(-${curr * 100}%)` }}>
+    className="overflow-hidden relative h-full">
+      <div className="flex max-w-full w-full h-full transition-transform ease-in-out duration-500 object-cover" style={{ transform: `translateX(-${curr * 100}%)` }}>
         {slides}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4 text-white">

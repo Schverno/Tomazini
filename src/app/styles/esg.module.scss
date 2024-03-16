@@ -1,0 +1,119 @@
+.esgwrapper {
+    display: flex;
+    flex-direction: row;
+    color: #616C5E;
+    overflow: hidden;
+    min-height: 100vh;
+
+    .texto {
+        color: #616C5E;
+        padding: 160px  115px ;
+        width: 60%;
+        min-height: 100vh;
+
+        h1 {
+            font-size: 2rem;
+            line-height: 2rem;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+            margin-bottom: 40px;
+            font-weight: 500;
+            max-width: 650px;
+        }
+
+        ul{
+            list-style:inside;
+            font-weight: 300;
+            font-size: 1.1rem;
+            li{
+                margin-bottom: 5px;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            margin-top: 40px;
+            font-weight: 300;
+            max-width: 650px;
+
+        }
+
+
+        @media ((min-width:1025px) and (max-width: 1440px)) {
+            padding: 180px 80px;
+            min-height: 120vh;
+
+
+        }
+
+        @media ((min-width:769px) and (max-width: 1024px)) {
+            padding: 40px 40px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 80px 30px;
+        }
+    }
+
+    .imagen {
+        width: 40%;
+        background-image: url(../../../public/bgesg.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        @media (max-width: 768px) {
+            min-height: 500px;
+        }
+
+    }
+
+
+
+    @media ((min-width:769px) and (max-width: 1024px)) {
+
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .texto,
+        .imagen {
+            width: 100%;
+        }
+
+        .texto{
+            padding: 60px  30px ;
+            min-height: 850px;
+            h1{
+                font-size: 2rem;
+                line-height: 2.2rem;
+                margin-bottom: 20px;
+            }
+    
+            h2 {
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                margin-bottom: 20px;
+            }
+    
+            ul{
+                font-size: 1.1rem;
+            }
+    
+            p {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+                margin-top: 20px;
+            }
+        }
+
+       
+    }
+}

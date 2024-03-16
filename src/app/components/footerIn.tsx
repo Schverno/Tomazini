@@ -32,9 +32,9 @@ export default function FooterIn() {
     return (
         <main className="relative">
             <motion.div className={styles.footer}
-                initial={{ scaleY: "0.1%" }}
+                initial={{ scaleY: "50%" }}
                 whileInView={{ scaleY: "100%" }}
-                viewport={{ once: true, margin: "150px" }}
+                viewport={{ once: true, margin: "200px" }}
                 transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
             >
                 <div>
@@ -73,7 +73,7 @@ export default function FooterIn() {
                     <motion.div className={styles.copywrapper}
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        viewport={{ once: true, margin: "0px" }}
+                        viewport={{ once: true, margin: "-30px" }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.75, delay: 1.5 }}
                     >
                         <p><strong>5842 NW 74th Terrace (Parkland, Fl 33067)</strong><br />
