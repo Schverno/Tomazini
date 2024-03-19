@@ -25,8 +25,7 @@ export default function RootLayout({
       </head>
       <body className={poppins.className}>
         {children}
-        <ScrollTop/>
-
+        <ScrollTop />
       </body>
     </html>
   );
