@@ -88,7 +88,7 @@ export default function Nav() {
                                     {(link.href === path || hoverStates[index]) && (
                                         
                                             <motion.span
-                                                className='absolute bg-white h-[2px] top-12 w-full left-0 flex'
+                                                className='absolute bg-white h-[2px] top-10 w-full left-0 flex'
                                                 initial={{ width: 0 }}
                                                 animate={{ width: '100%' }}
                                                 exit={{ width: 0, opacity: 0, transition: { ease: [0.76, 0, 0.24, 1], duration: 0.7 } }}

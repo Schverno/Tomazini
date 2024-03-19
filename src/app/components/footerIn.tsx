@@ -43,14 +43,16 @@ export default function FooterIn() {
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true, margin: "0px" }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 0.5 }}>
-                        <Image
-                            sizes="(max-width: 768px) 176px, 84px"
-                            alt="Logo Footer Tomazini"
-                            width={176}
-                            height={84}
-                            src={Logo}
-                            priority={true}
-                        />
+                        <Link href="/">
+                            <Image
+                                sizes="(max-width: 768px) 176px, 84px"
+                                alt="Logo Footer Tomazini"
+                                width={176}
+                                height={84}
+                                src={Logo}
+                                priority={true}
+                            />
+                        </Link>
                     </motion.div>
                     <motion.div className={styles.iconswrapper}
                         initial={{ y: 20, opacity: 0 }}
@@ -79,40 +81,40 @@ export default function FooterIn() {
                         <p><strong>5842 NW 74th Terrace (Parkland, Fl 33067)</strong><br />
                             Servicio de emergencia 24 hs.<br />
                             8:00 AM to 4:50 PM<br />
-                            <a className="relative" href="tel:954 822 8904" 
-                               onMouseEnter={handleMouseEnterTel}
-                               onMouseLeave={handleMouseLeaveTel}>
+                            <a className="relative" href="tel:954 822 8904"
+                                onMouseEnter={handleMouseEnterTel}
+                                onMouseLeave={handleMouseLeaveTel}>
                                 954-822-8904
 
                                 <AnimatePresence mode="wait" >
-                                {hoverStateTel  && (
-                                    <motion.span
-                                        className='absolute bg-white h-[2px] bottom-0 w-full left-0 flex'
-                                        initial={{ width: 0 }}
-                                        animate={{ width: '100%' }}
-                                        exit={{ width: '100%' , opacity: 0, transition: { ease: [0.76, 0, 0.24, 1], duration: 0.7 } }}
-                                        transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.7, }}
+                                    {hoverStateTel && (
+                                        <motion.span
+                                            className='absolute bg-white h-[2px] bottom-0 w-full left-0 flex'
+                                            initial={{ width: 0 }}
+                                            animate={{ width: '100%' }}
+                                            exit={{ width: '100%', opacity: 0, transition: { ease: [0.76, 0, 0.24, 1], duration: 0.7 } }}
+                                            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.7, }}
 
-                                 />
-                                 )}</AnimatePresence>
+                                        />
+                                    )}</AnimatePresence>
                             </a><br />
-                            <a className="relative"  href="mailto:Tomazinigroup@yahoo.com"
-                             onMouseEnter={handleMouseEnterEmail}
-                             onMouseLeave={handleMouseLeaveEmail}>
+                            <a className="relative" href="mailto:Tomazinigroup@yahoo.com"
+                                onMouseEnter={handleMouseEnterEmail}
+                                onMouseLeave={handleMouseLeaveEmail}>
                                 Tomazinigroup@yahoo.com
                                 <AnimatePresence mode="wait" >
-                                {hoverStateEmail  && (
-                                    <motion.span
-                                        className='absolute bg-white h-[2px] bottom-0 w-full left-0 flex'
-                                        initial={{ width: 0 }}
-                                        animate={{ width: '100%' }}
-                                        exit={{ width: '100%' , opacity: 0, transition: { ease: [0.76, 0, 0.24, 1], duration: 0.7 } }}
-                                        transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.7, }}
+                                    {hoverStateEmail && (
+                                        <motion.span
+                                            className='absolute bg-white h-[2px] bottom-0 w-full left-0 flex'
+                                            initial={{ width: 0 }}
+                                            animate={{ width: '100%' }}
+                                            exit={{ width: '100%', opacity: 0, transition: { ease: [0.76, 0, 0.24, 1], duration: 0.7 } }}
+                                            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.7, }}
 
-                                 />
-                                 )}</AnimatePresence>
-                                </a>
-                                </p>
+                                        />
+                                    )}</AnimatePresence>
+                            </a>
+                        </p>
                         <p className={styles.medium}>
                             Áreas de Cobertura - Estado de Florida </p>
                     </motion.div>

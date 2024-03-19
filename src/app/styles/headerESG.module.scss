@@ -15,12 +15,14 @@
         justify-content: space-between;
 
         .logowrapper {
+            z-index: 1 !important;
 
             a {
                 display: block;
                 width: 100%;
                 max-width: 250px;
-                img{
+
+                img {
                     display: block;
 
                 }
@@ -48,11 +50,18 @@
 
         .barras {
             position: fixed;
-            top: 40px;
+            top: 30px;
             right: 40px;
             cursor: pointer;
             z-index: 20;
+            background-color: #616C5E;
+            padding: 25px 15px;
+            border-radius: 50%;
 
+            @media (max-width: 640px) {
+                top: 15px;
+                right: 20px;
+            }
 
         }
 
@@ -64,9 +73,10 @@
             & span {
                 content: "";
                 display: block;
-                width: 100%;
+                width: 90%;
+                margin-left: 5%;
                 height: 3px;
-                background-color: #616C5E;
+                background-color: #fff;
                 position: relative;
                 transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
             }
@@ -79,7 +89,8 @@
                 top: 10px;
             }
 
-            &.burgerWhite{
+            &.burgerWhite {
+
                 &::after,
                 &::before,
                 & span {
@@ -88,8 +99,8 @@
             }
         }
 
-      
-        
+
+
 
         .burgerActive {
             &::after {

@@ -31,7 +31,7 @@ export default function Headerhome() {
                 </motion.div>
 
                 <motion.div
-                    initial={{ scaleX: 0, opacity: 0 }}
+                    initial={{ scaleX: 0.8, opacity: 0 }}
                     animate={{ scaleX: 1, opacity: 1, transition: { ease: [0.76, 0, 0.24, 1], duration: 1, delay: 2 } }}
                     onMouseDown={() => { setActive(!isActive) }} className={styles.barras}
                 >
