@@ -5,7 +5,7 @@ import { FaBed, FaToilet,FaLocationDot,FaExpand    } from "react-icons/fa6"
 
 // Define los datos de las cards para Residencial y Comercial
 const dataResidencial = [
-    { id: 1, img: "/portfolio/residencial/1.webp", alt: "residencial 1", precio: "Precio: 600,000 USD ", tipo: " Uso residencial (para tres casas familiares).",masinfo:"Posibilidad de Inversión.",masinfo2:"", dir: "204 S Chillingworth Drive, West Palm Beach.", info: [{ icono: FaExpand  , num: "0,58 Acres" }, { icono: FaLocationDot , num: "Solo lote"}] },
+    { id: '1R', img: "/portfolio/residencial/1.webp", alt: "residencial 1", precio: "Precio: 600,000 USD ", tipo: " Uso residencial (para tres casas familiares).",masinfo:"Posibilidad de Inversión.",masinfo2:"", dir: "204 S Chillingworth Drive, West Palm Beach.", info: [{ icono: FaExpand  , num: "0,58 Acres" }, { icono: FaLocationDot , num: "Solo lote"}] },
 ];
 
 const dataComercial = [

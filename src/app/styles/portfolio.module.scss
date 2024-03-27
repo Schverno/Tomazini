@@ -97,7 +97,6 @@
 
 .wrapperCards {
     padding: 80px 30px;
-
     .texto {
         text-align: center;
         color: #616C5E;
@@ -191,6 +190,9 @@
         gap: 20px;
         max-width: 1440px;
         margin: 0 auto;
+        min-height: 700px;
+        transition: height 500ms ease-in-out;
+
       
         .card {
             max-width: 100%;
