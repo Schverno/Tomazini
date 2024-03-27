@@ -11,21 +11,19 @@ import { motion, useScroll } from "framer-motion";
 import AnimatedTextWord from "./components/AnimatedTextWord";
 import Link from "next/link";
 
-import Slide1 from '../../public/1.jpg'
+import Slide1 from '../../public/1.webp'
 import Slide2 from '../../public/1.jpg'
-import Slide3 from '../../public/1.jpg'
 
 import icon1 from '../../public/iconcard1.svg'
 import icon2 from '../../public/iconcard2.svg'
 import icon3 from '../../public/iconcard3.svg'
 
 import SlideComercial1 from '../../public/comercial.jpg'
-import SlideComercial2 from '../../public/comercial.jpg'
-import SlideComercial3 from '../../public/comercial.jpg'
+import SlideComercial2 from '../../public/comercial2.webp'
 
-import SlideResidencial1 from '../../public/residencial.jpg'
-import SlideResidencial2 from '../../public/residencial.jpg'
-import SlideResidencial3 from '../../public/residencial.jpg'
+import SlideResidencial1 from '../../public/residencial.webp'
+import SlideResidencial2 from '../../public/residencial2.webp'
+
 import { BiChevronRight } from "react-icons/bi";
 import { useRef } from "react";
 
@@ -43,20 +41,17 @@ export default function Home() {
 
   const slides = [
     Slide1,
-    Slide2,
-    Slide3,
+    Slide2
   ]
 
   const slidesComercial = [
     SlideComercial1,
-    SlideComercial2,
-    SlideComercial3,
+    SlideComercial2
   ]
 
   const slidesResidencial = [
     SlideResidencial1,
-    SlideResidencial2,
-    SlideResidencial3,
+    SlideResidencial2
   ]
 
   return (
@@ -161,7 +156,7 @@ export default function Home() {
                 <h2>Comercial</h2>
                 <div className={styles.chevron}>
                   <a className={styles.chevron}
-                    href="/propiedades">
+                    href="/portfolio">
                     <BiChevronRight />
                   </a>
                 </div>
@@ -183,7 +178,7 @@ export default function Home() {
               <div className={styles.header}>
                 <h2>Residencial</h2>
                 <a className={styles.chevron}
-                  href="/propiedades">
+                  href="/portfolio">
                   <BiChevronRight />
                 </a>
               </div>

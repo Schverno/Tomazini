@@ -1,19 +1,16 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import styles from "../styles/portfolio.module.scss"
-import { FaBed, FaToilet } from "react-icons/fa6"
+import { FaBed, FaToilet,FaLocationDot,FaExpand    } from "react-icons/fa6"
 
 // Define los datos de las cards para Residencial y Comercial
 const dataResidencial = [
-    { id: 1, img: "/portfolio/1.webp", alt: "test", precio: "Precio: $90.000", tipo: "Vivienda unifamiliar", dir: "7787 South Ada Street, Florida USA", info: [{ icono: FaBed, num: "2" }, { icono: FaToilet, num: "2" }] },
-    { id: 2, img: "/portfolio/2.webp", alt: "test1", precio: "Precio: $90.000", tipo: "Vivienda unifamiliar", dir: "7787 South Ada Street, Florida USA", info: [{ icono: FaBed, num: "2" }, { icono: FaToilet, num: "1" }] },
-    { id: 3, img: "/portfolio/3.webp", alt: "test2", precio: "Precio: $90.000", tipo: "Vivienda unifamiliar", dir: "7787 South Ada Street, Florida USA", info: [{ icono: FaBed, num: "2" }, { icono: FaToilet, num: "2" }] },
-    { id: 4, img: "/portfolio/2.webp", alt: "test3", precio: "Precio: $90.000", tipo: "Vivienda unifamiliar", dir: "7787 South Ada Street, Florida USA", info: [{ icono: FaBed, num: "2" }, { icono: FaToilet, num: "2" }] },
+    { id: 1, img: "/portfolio/residencial/1.webp", alt: "residencial 1", precio: "Precio: 600,000 USD ", tipo: " Uso residencial (para tres casas familiares).",masinfo:"Posibilidad de Inversión.",masinfo2:"", dir: "204 S Chillingworth Drive, West Palm Beach.", info: [{ icono: FaExpand  , num: "0,58 Acres" }, { icono: FaLocationDot , num: "Solo lote"}] },
 ];
 
 const dataComercial = [
-    { id: 1, img: "/portfolio/2.webp", alt: "test4", precio: "Precio: $100.000", tipo: "Vivienda unifamiliar", dir: "7787 South Ada Street, Florida USA", info: [{ icono: FaBed, num: "2" }, { icono: FaToilet, num: "2" }] },
-    { id: 2, img: "/portfolio/3.webp", alt: "test5", precio: "Precio: $100.000", tipo: "Vivienda unifamiliar", dir: "7787 South Ada Street, Florida USA", info: [{ icono: FaBed, num: "2" }, { icono: FaToilet, num: "2" }] },
+    { id: 1, img: "/portfolio/comercial/1.webp", alt: "comercial 1", precio: "Precio: 1,100,000 USD ", tipo: " Uso comercial",masinfo:"Posibilidad de Inversión.",masinfo2:"Lote limpio y cerrado.", dir: "3201 Broadway, West Palm Beach.", info: [{ icono: FaExpand  , num: "0,14 Acres" }] },
+    { id: 2, img: "/portfolio/comercial/2.webp", alt: "comercial 2", precio: "Precio: CONSULTAR ", tipo: " Uso comercial",masinfo:"Posibilidad de Inversión.",masinfo2:"", dir: "3406 Broadway, West Palm Beach.", info: [{ icono: FaExpand  , num: "0,13 Acres" }] },
 ];
 
 export default function PortfolioCards() {
@@ -52,10 +49,12 @@ export default function PortfolioCards() {
                 <div className={styles.footer}>
 
                     <div className={styles.tipo}>
-                        <h3> {item.tipo}</h3>
+                        <h3> {item.dir}</h3>
                     </div>
                     <div className={styles.dir}>
-                        <p>{item.dir}</p>
+                    <p>{item.tipo}</p>
+                    <p>{item.masinfo}</p>
+                    <p>{item.masinfo2}</p>
                     </div>
                     <div className={styles.wrappericons}>
                         {item.info && item.info.map((infoItem, i) => (
