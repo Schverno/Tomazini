@@ -84,8 +84,7 @@ export default function Esg() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "0px" }}
                 transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.7, delay: 1.2 }}
-              >Además, integramos <strong> paisajismo </strong>para plantar arbolado nativo instalando sistemas de irrigación sostenibles para atraer compradores
-                ambientalmente conscientes.</motion.p>
+              >Además, integramos <strong> paisajismo </strong>para plantar arbolado urbano e instalar sistemas de irrigación sostenibles así reducimos el impacto ambiental de nuestros proyectos.</motion.p>
             </>
           )}
 

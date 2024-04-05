@@ -23,8 +23,7 @@ export default function Porftolio() {
 
             <p>Las empresas de construcción no hacen lo que hacemos nosotros: asesoramos desde el principio hasta el final de la inversión siendo parte de cada uno de los aspectos del negocio: inversiones, contabilidad,
               construcción, legales, venta o renta e inclusive el mantenimiento de la propiedad. </p>
-            <p> <strong> Management general de la propiedad</strong> (te hacés
-              cargo como si la propiedad fuera tuya).</p>
+            <p> <strong> Administración general de la propiedad:</strong> nos hacemos cargo como si fuera nuestra para que no tengas que preocuparte</p>
             <a href="/#contacto"><button>Contactanos</button></a>
           </motion.div>
           <motion.div className={styles.imagen}

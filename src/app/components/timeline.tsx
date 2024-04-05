@@ -9,8 +9,9 @@ export default function Timeline() {
             content: [
                 {
                     subtitles: [
-                        "Conseguimos la propiedad, nos hacemos cargo porque somos corredores inmobiliarios, tenemos abogados, contadores y otro profesionales para asesorarte.",
-                        "Te abrimos la compañía en Estados Unidos y hacemos la contabilidad.",
+                        "Conseguimos las mejores posibilidades de inversión inmobiliaria.",
+                        "Nos encargamos de todo con un equipo de especialistas conformado por corredores, abogados, contadores y otros profesionales.",
+                        "Asesoramiento integral."
                     ],
                 },
             ],
@@ -21,9 +22,7 @@ export default function Timeline() {
             content: [
                 {
                     subtitles: [
-                        "Tenemos arquitectos, ingenieros y profesionales de la construcción en general.",
-                        "Sacamos todos los costos y planificamos de acuerdo a tus necesidades.",
-                        "<strong>Costo total:</strong> costo del trabajo con material + 15 o 20% del total que se gaste en compra de propiedad y remodelación.",
+                        "Planificamos y construimos de acuerdo a tus necesidades a partir de un análisis financiero completo que garantice el mejor retorno de la inversión.",
                     ],
                 },
             ],
@@ -34,8 +33,9 @@ export default function Timeline() {
             content: [
                 {
                     subtitles: [
-                        "Se puede comprar o vender.",
-                        "Se puede rentar la propiedad y hacemos el mantenimiento. Inclusive el desalojo en caso de falta de pago."
+                        "Si preferís comprar, vender o rentar, estamos a tu disposición.",
+                        "Realizamos el mantenimiento de cada propiedad.",
+                        "Podemos gestionar el pago de la renta."
 
                     ],
                 },

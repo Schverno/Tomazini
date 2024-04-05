@@ -12,7 +12,6 @@ import AnimatedTextWord from "./components/AnimatedTextWord";
 import Link from "next/link";
 
 import Slide1 from '../../public/1.webp'
-import Slide2 from '../../public/1.jpg'
 
 import icon1 from '../../public/iconcard1.svg'
 import icon2 from '../../public/iconcard2.svg'
@@ -40,18 +39,15 @@ export default function Home() {
   });
 
   const slides = [
-    Slide1,
-    Slide2
+    Slide1
   ]
 
   const slidesComercial = [
-    SlideComercial1,
     SlideComercial2
   ]
 
   const slidesResidencial = [
-    SlideResidencial1,
-    SlideResidencial2
+    SlideResidencial1
   ]
 
   return (
@@ -104,13 +100,13 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "0px" }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 0.5, damping: 10, stiffness: 100, type: "spring" }}
-            >Servicios como empresa</motion.h2>
+            >Nuestros servicios</motion.h2>
             <motion.p
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "0px" }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 2, delay: 0.8, damping: 12, stiffness: 100, type: "spring" }}
-            >Te asesoramos en toda la inversión.</motion.p>
+            >Te asesoramos desde el principio hasta el final de la inversión.</motion.p>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -120,25 +116,20 @@ export default function Home() {
               <div className={styles.card}>
                 <Image src={icon1} width={100} height={100} alt="Icono adquisición" />
                 <h2>Adquisición</h2>
-                <p>Conseguimos la propiedad, nos hacemos cargo porque somos corredores inmobiliarios, tenemos abogados, contadores y otros
-                  profesionales para asesorarte.</p><br />
-                <p>
-                  Te abrimos la compañía en Estados Unidos y hacemos la contabilidad.</p>
+                <p>Conseguimos las mejores posibilidades de inversión inmobiliaria: nos encargamos de todo con un equipo de especialistas conformado por corredores, abogados, contadores y otros profesionales para asegurar un asesoramiento integral.</p>
+    
               </div>
               <div className={styles.card}>
                 <Image src={icon2} width={100} height={100} alt="Icono construccion" />
 
                 <h2>Construcción</h2>
-                <p>Tenemos arquitectos, ingenieros y profesionales de la construcción en general.</p><br />
-                <p>Sacamos todos los costos y planificamos de acuerdo a tus necesidades. </p>
+                <p>Planificamos y construimos de acuerdo a tus necesidades a partir de un análisis financiero completo que garantice el mejor retorno de la inversión.</p>
               </div>
               <div className={styles.card}>
                 <Image src={icon3} width={100} height={100} alt="Icono gestión" />
 
                 <h2>Gestión</h2>
-                <p>Se puede comprar o vender.<br />
-                  Se puede rentar la propiedad y hacemos el mantenimiento.
-                  Inclusive el desalojo en caso de falta de pago.
+                <p>Si preferís comprar, vender o rentar, estamos a tu disposición. Además, realizamos el mantenimiento de cada propiedad y podemos gestionar el pago de la renta.
                 </p>
               </div>
             </motion.div>
@@ -232,7 +223,7 @@ export default function Home() {
                 <h2>Contacto</h2>
                 <p><strong>5842 NW 74th Terrace (Parkland, Fl 33067)</strong><br />
                   Servicio de emergencia 24 hs.<br />
-                  8:00 AM to 4:50 PM<br />
+                  8:00 a 16:50 h.<br />
                   <a href="tel:954 822 8904">954-822-8904</a><br />
                   <a href="mailto:Tomazinigroup@yahoo.com">Tomazinigroup@yahoo.com</a></p>
                 <p className={styles.medium}>

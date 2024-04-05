@@ -6,7 +6,7 @@
 
     .texto {
         color: #fff;
-        padding: 160px 0px 160px 200px;
+        padding: 160px 160px 160px 100px;
 
         h1 {
             font-size: 2rem;
@@ -51,7 +51,7 @@
         }
 
         @media ((min-width:1025px) and (max-width: 1440px)) {
-            padding: 160px 80px;
+            padding: 160px 100px 160px 40px;
 
         }
 

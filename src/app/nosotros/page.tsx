@@ -45,8 +45,8 @@ export default function Nosotros() {
              transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
           >
             <p>A lo largo de los años, entendimos la necesidad de crear nuevas formas de negocios para ofrecer una administración eficiente y servicios de calidad para lograr nuestros objetivos de inversión sin importar el tamaño.</p>
-            <p><strong>Nuestro equipo especializado está para guiar a lo largo de todo el proceso:</strong><br/>
-Desde la formulación de la estrategia de inversión, el análisis de mercado, la adquisición de la propiedad y la administración.
+            <p><strong>Nuestro equipo especializado está para guiarte a lo largo de todo el proceso:</strong><br/>
+            desde la formulación de la estrategia de inversión, el análisis del mercado, la adquisición de la propiedad y la administración general.
 </p>
           </motion.div>
         </div>

@@ -26,9 +26,7 @@ export default function Inversiones() {
   });
 
   const slides = [
-    Slide1,
-    Slide2,
-    Slide3,
+    Slide1
   ]
 
 
@@ -44,9 +42,9 @@ export default function Inversiones() {
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 1 }}>
             <h1>¿Por qué invertir <span className="hidden md:block h-0"><br /></span>
               en Tomazini Group? </h1>
-            <p>A un nivel de confianza del país, de la propiedad privada e inversión privada y <strong>seguridad jurídica garantizada.</strong></p>
-            <p>Cada inversión es distinta y luego de conocer al inversor y sus objetivos, vamos <strong>buscar la mejor propuesta dependiendo de sus metas</strong>  a corto, mediano o largo plazo y asesorar de la mejor forma.</p>
-            <p>Es un <strong> joint venture.</strong> El inversor es un partner y estamos juntos como socios. Hacemos el proyecto, si el partner decide vender, se hace.</p>
+            <p>Contás con un nivel de confianza, de protección de la propiedad privada y de <strong>seguridad jurídica garantizada.</strong></p>
+            <p> Cada inversión es distinta: cuando nos conozcamos, vamos a <strong> buscar la mejor propuesta </strong> dependiendo de sus metas a lo largo del tiempo para poder asesorar de la mejor manera.</p>
+            <p>Es un <strong> joint venture.</strong> el inversor es un socio y estamos juntos durante todo el proyecto.</p>
             <a href="#contacto"><button>Contactanos</button></a>
           </motion.div>
           <motion.div
@@ -117,8 +115,8 @@ export default function Inversiones() {
                   viewport={{ once: true, margin: "0px" }}
                   transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 1 }}
                   className={styles.cols}>
-                  <h1>Siempre dispuestos <span className="hidden md:block h-0"><br /></span>
-                    a colaborar en nuevos proyectos </h1>
+                  <h1>Siempre abiertos  <span className="hidden md:block h-0"><br /></span>
+                  a nuevos proyectos </h1>
                 </motion.div>
 
                 <motion.div
