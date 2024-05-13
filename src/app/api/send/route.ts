@@ -15,7 +15,7 @@ export async function POST(values) {
     
     const emailData = {
       from: 'Noreply <noreply@neopolitan.me>',
-      to: ['neo@neopolitan.me'],
+      to: ['info@tomazinigroup.com'],
       subject: 'Nuevo contacto desde la web - Tomazini Group - ' + body.username,
       react: EmailTemplate({
         nombre: body.username,
