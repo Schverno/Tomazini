@@ -4,6 +4,8 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ScrollTop from "./components/ScrollToTop";
+import Script from 'next/script';
+
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "500", "600"], style: ['normal'] });
 
@@ -27,6 +29,19 @@ export default function RootLayout({
         {children}
         <ScrollTop />
       </body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16569630788"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-16569630788');
+        `}
+      </Script>
     </html>
   );
 }
